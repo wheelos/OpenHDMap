@@ -68,7 +68,7 @@ We currently use Apollo HD map format to work with simulator to verify HD maps.
 ```
 .
 ├── docs             // documents
-├── map_format       // Implement map format conversion function
+├── map_format_tool  // Implement map format conversion function
 ├── map_label_tool   // Map labeling tool
 ├── map_production   // Create high-precision map which use to label
 ```
