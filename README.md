@@ -1,15 +1,15 @@
 # OpenHDMap
-This is an open source HD map project for autonomous driving. The precision map production process is divided into four parts: **map collection, map production, map labeling, and map saving**. This project mainly uses lidar as a collection sensor to provide the map making process, map labeling tool, and map save format.  
+This is an open source HD map project for autonomous driving. The precision map production process is divided into four parts: **map collection, map production, map labeling, and map saving**. This project mainly uses lidar as a collection sensor to provide the map making process.  
 
-The goal is to provide a complete mapping process for autonomous driving.  
+The goal is to provide a complete mapping process for autonomous driving systems and simulation.  
 
-If you have any advice, please feel free to contact [daohu527@gmail.com]()  
+If you have any advice, please feel free to contact us.  
 
 ## Introduce  
 Let ’s start with how to make an HD map. The HD map making process can be divided into 4 steps. 
-1. Map collection
-2. Map production
-3. Map labeling
+1. Map collection  
+2. Map production  
+3. Map labeling  
 4. Map saving  
 
 Next we introduce these four processes respectively.  
@@ -64,13 +64,26 @@ We currently use Apollo HD map format to work with simulator to verify HD maps.
 
 ## Quick start
 
+#### Introduction
+```
+.
+├── docs             // documents
+├── map_format       // Implement map format conversion function
+├── map_label_tool   // Map labeling tool
+├── map_production   // Create high-precision map which use to label
+```
+
 #### 1. Map production
 We use "Autoware NDT Mapping" to build a small map from open dataset. The code is reference in "core_perception/lidar_localizer/nodes/ndt_mapping" [Link](https://gitlab.com/autowarefoundation/autoware.ai/core_perception). The code is now in dir "map_production".  
 
 #### 2. Map labeling
-We will soon release a map annotation tool, which will in "map_labeling" dir.  
+We will soon release a map annotation tool, which will in "map_label_tool" dir.  
 
-#### 3. How to build
+#### 3. Map format
+After labelling semantic maps, we provide multiple map formats to different open source projects like Apollo and autoware.  
+
+#### 4. End-to-end pipeline
+
 
 ## Examples  
 
