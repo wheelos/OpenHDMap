@@ -80,7 +80,8 @@ class Map:
         for p in curve.line_segment.point:
           px.append(float(p.x))
           py.append(float(p.y))
-        ax.plot(px, py, ls='-', linewidth=5, c=color_val, alpha=0.5)
+        # ax.plot(px, py, ls='-', linewidth=5, c=color_val, alpha=0.5)
+        ax.plot(px, py, 'o-', linewidth=5, c=color_val, alpha=0.5)
   
   @staticmethod
   def _draw_polygon_boundary(polygon, ax, color_val):
@@ -89,7 +90,7 @@ class Map:
     for point in polygon.point:
       px.append(point.x)
       py.append(point.y)
-    ax.plot(px, py, ls='-', linewidth=5, c=color_val, alpha=0.5)
+    ax.plot(px, py, ls='-', linewidth=2, c=color_val, alpha=0.5)
 
   @staticmethod
   def _draw_polygon(polygon, plt, color_val):

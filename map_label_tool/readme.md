@@ -19,3 +19,10 @@ python main.py
 ## example
 The following is the display of the hdmap in `data\borregas_ave.txt`.
 ![map_show](doc/img/map_show.jpg)  
+
+
+## todo
+1. add argparse.ArgumentParser
+2. show map in more details (like layers, styles)  // now
+3. edit map and add lanes,junctions
+4. load picture as background
