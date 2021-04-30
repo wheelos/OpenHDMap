@@ -1,5 +1,4 @@
-# read()
-# write()
+#!/usr/bin/env python
 
 import lib.proto_utils as proto_utils
 from modules.map.proto import map_pb2
